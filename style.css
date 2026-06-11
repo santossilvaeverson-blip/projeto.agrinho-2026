@@ -1,45 +1,169 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5fdf5;
+    color:#333;
 }
 
-main {
-    padding: 2rem;
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
-input[type="text"] {
-    padding: 0.5rem;
-    width: 60%;
-    margin-right: 0.5rem;
+.overlay h1{
+    font-family:'Montserrat',sans-serif;
+    font-size:4rem;
+    color:white;
+    animation:fadeDown 1.2s;
 }
 
-button {
-    padding: 0.5rem 1rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+.overlay p{
+    color:white;
+    font-size:1.3rem;
+    margin-top:15px;
 }
 
-button:hover {
-    background-color: #45a049;
+.pesquisa{
+    text-align:center;
+    padding:60px 20px;
 }
 
-section {
-    margin-bottom: 2rem;
+.pesquisa h2{
+    color:#2e7d32;
+    margin-bottom:20px;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #ddd;
+.search-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+input{
+    width:300px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+    outline:none;
+}
+
+button{
+    padding:15px 25px;
+    border:none;
+    border-radius:30px;
+    background:#4caf50;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#2e7d32;
+}
+
+.resultado{
+    margin-top:25px;
+    font-size:1.1rem;
+    font-weight:500;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.4s;
+    font-size:2rem;
+}
+
+.card h3{
+    font-size:1.3rem;
+    margin:15px 0;
+    color:#2e7d32;
+}
+
+.card p{
+    font-size:.95rem;
+    font-weight:500;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.impacto{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.barra{
+    width:80%;
+    max-width:700px;
+    height:30px;
+    margin:20px auto;
+    background:#ddd;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.progresso{
+    width:85%;
+    height:100%;
+    background:linear-gradient(90deg, #4caf50, #8bc34a);
+    animation:crescer 2s ease;
+}
+
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@keyframes crescer{
+    from{
+        width:0;
+    }
+    to{
+        width:85%;
+    }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
