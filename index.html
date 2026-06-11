@@ -1,39 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Forte, Futuro Sustentável</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Agro Forte, Futuro Sustentável</h1>
+
+<header class="hero">
+    <div class="overlay">
+        <h1>🌱 Agro Forte, Futuro Sustentável</h1>
         <p>Equilíbrio entre produção agrícola e preservação ambiental</p>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <section class="search-section">
-            <h2>Pesquise práticas agrícolas sustentáveis</h2>
-            <input type="text" id="searchInput" placeholder="Digite uma prática...">
-            <button onclick="searchPractice()">Pesquisar</button>
-            <p id="result"></p>
-        </section>
+<section class="pesquisa">
+    <h2>🔍 Pesquise uma prática sustentável</h2>
 
-        <section class="facts-section">
-            <h2>Curiosidades sobre sustentabilidade</h2>
-            <ul id="factsList">
-                <li>A rotação de culturas ajuda a reduzir pragas e aumenta a fertilidade do solo.</li>
-                <li>Agroflorestas combinam árvores e culturas agrícolas, protegendo o solo e a biodiversidade.</li>
-                <li>Uso consciente da água economiza até 50% no consumo agrícola.</li>
-            </ul>
-        </section>
-    </main>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Ex: agrofloresta">
+        <button onclick="searchPractice()">Pesquisar</button>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 Agro Sustentável</p>
-    </footer>
+    <div id="result" class="resultado"></div>
+</section>
 
-    <script src="script.js"></script>
+<section class="cards">
+    <div class="card">
+        🌾
+        <h3>Rotação de Culturas</h3>
+        <p>Mantém o solo fértil e reduz o surgimento de pragas.</p>
+    </div>
+
+    <div class="card">
+        🌳
+        <h3>Agrofloresta</h3>
+        <p>Integra árvores e agricultura para proteger o meio ambiente.</p>
+    </div>
+
+    <div class="card">
+        💧
+        <h3>Uso Inteligente da Água</h3>
+        <p>Sistemas modernos economizam recursos hídricos.</p>
+    </div>
+
+    <div class="card">
+        🌱
+        <h3>Plantio Direto</h3>
+        <p>Técnica que protege o solo contra erosão e conserva umidade.</p>
+    </div>
+</section>
+
+<section class="impacto">
+    <h2>🌍 Impacto Positivo</h2>
+
+    <div class="barra">
+        <div class="progresso"></div>
+    </div>
+
+    <p>Agricultura sustentável aumenta a produtividade e reduz impactos ambientais.</p>
+</section>
+
+<footer>
+    <p>Desenvolvido com HTML, CSS e JavaScript</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
 </body>
 </html>
